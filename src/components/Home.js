@@ -18,13 +18,7 @@ function Home() {
     )
 };
 
-/*function HomeHeader() {
-    return (
-        <div className="homeHeader">
-            <h1>Home Header</h1>
 
-        </div>
-    )};*/
 
 
 export default Home;
