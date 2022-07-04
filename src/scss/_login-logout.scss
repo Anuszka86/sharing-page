@@ -1,0 +1,72 @@
+@use "settings/colors";
+@use "settings/fonts";
+@use "settings/reset";
+
+.login-logout {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+;
+.login-logout-header {
+  font-family: fonts.$font-base;
+  font-size: 2.5rem;
+  color: colors.$color-dark;
+}
+
+.login-logout-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: colors.$color-base;
+  gap: 2rem;
+  padding: 3rem;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    font-family: fonts.$font-base;
+    font-weight: bold;
+    font-size: 1rem;
+    color: colors.$color-dark;
+  }
+
+  input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #707070;
+    width: 15.5rem;
+    height: 3rem;
+  }
+}
+
+.login-logout-buttons-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  button {
+    background: none;
+    border: none;
+    font-family: fonts.$font-base;
+    font-size:1.125rem;
+    font-weight: lighter;
+    color: #000000;
+    padding: 0.875rem;
+  }
+  .submitting-button {
+    border: 1px solid colors.$color-dark;
+  }
+  .login-register-link {
+    text-decoration: none;
+    color: #000000;
+  }
+}

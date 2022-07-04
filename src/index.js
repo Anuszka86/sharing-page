@@ -1,1 +1,20 @@
-import 'scss/main.scss';
+import * as React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+
+import App from "./App";
+
+
+
+//tutaj renderowanie
+
+const root = ReactDOM.createRoot(
+    document.getElementById("root")
+);
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
+);
