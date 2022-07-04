@@ -24,8 +24,8 @@ function Register() {
                 </label>
             </form>
             <div className="login-logout-buttons-bar">
-                <button> <Link to="/logowanie" className="login-register-link">Zaloguj się</Link></button>
-                <button className="submitting-button">Zarejestruj się</button>
+                <button className="login-logout-button"> <Link to="/logowanie" className="login-register-link">Zaloguj się</Link></button>
+                <button className="login-logout-button submitting-button">Zarejestruj się</button>
             </div>
         </div>
     )

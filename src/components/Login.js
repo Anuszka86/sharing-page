@@ -20,8 +20,8 @@ function Login() {
                 </label>
             </form>
             <div className="login-logout-buttons-bar">
-                <button> <Link to="/rejestracja" className="login-register-link"> Zarejestruj się </Link></button>
-                <button className="submitting-button">Zaloguj się</button>
+                <button className="login-logout-button"> <Link to="/rejestracja" className="login-register-link"> Zarejestruj się </Link></button>
+                <button className="login-logout-button submitting-button">Zaloguj się</button>
             </div>
         </div>
     )

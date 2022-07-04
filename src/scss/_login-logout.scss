@@ -53,20 +53,23 @@
   display: flex;
   justify-content: space-between;
   width: 30rem;
-  button {
-    background: none;
-    border: none;
-    font-family: fonts.$font-base;
-    font-size:1.125rem;
-    font-weight: lighter;
-    color: #000000;
-    padding: 0.875rem;
-  }
-  .submitting-button {
-    border: 1px solid colors.$color-dark;
-  }
-  .login-register-link {
-    text-decoration: none;
-    color: #000000;
-  }
+
+
+
 }
+.login-logout-button {
+     background: none;
+     border: none;
+     font-family: fonts.$font-base;
+     font-size:1.125rem;
+     font-weight: lighter;
+     color: #000000;
+     padding: 0.875rem;
+   }
+.submitting-button {
+     border: 1px solid colors.$color-dark;
+   }
+.login-register-link {
+        text-decoration: none;
+        color: #000000;
+      }
