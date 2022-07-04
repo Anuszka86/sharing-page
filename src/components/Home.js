@@ -6,7 +6,6 @@ import HomeHeader from "./HomeHeader";
 function Home() {
     return (
         <div className="Home">
-            <h1>Home</h1>
             <HomeHeader/>
             {/*<HomeThreeColumns/>
         <HomeSteps/>
