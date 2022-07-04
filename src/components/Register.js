@@ -1,11 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./../scss/_login-logout.scss"
-import decoration from "./../assets/Decoration.svg"
+import decoration from "./../assets/Decoration.svg";
+import MainNav from "./MainNav";
 
 function Register() {
     return (
         <div className="login-logout">
+            <MainNav/>
             <h2 className="login-logout-header">Złóż konto</h2>
             <img src={decoration}/>
 

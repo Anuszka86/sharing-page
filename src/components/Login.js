@@ -2,10 +2,14 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "./../scss/_login-logout.scss"
 import decoration from "./../assets/Decoration.svg"
+import MainNav from "./MainNav";
 
 function Login() {
     return (
-        <div className="login-logout">
+       < div>
+           <MainNav/>
+           <div className="login-logout">
+
             <h2 className="login-logout-header">Zaloguj się</h2>
             <img src={decoration}/>
 
@@ -23,7 +27,7 @@ function Login() {
                 <button className="login-logout-button"> <Link to="/rejestracja" className="login-register-link"> Zarejestruj się </Link></button>
                 <button className="login-logout-button submitting-button">Zaloguj się</button>
             </div>
-        </div>
+        </div></div>
     )
 };
 

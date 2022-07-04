@@ -12,7 +12,7 @@ return (
             <Link to="/rejestracja" className="login-register-link">Zarejestruj się</Link>
         </div>
         <nav className="Home-navigation">
-            <Scrolling activeClass="active" to="start" spy={true} smooth={true}>Start</Scrolling>
+            <Link to="/"><Scrolling activeClass="active" to="start" spy={true} smooth={true}>Start</Scrolling></Link>
             <Scrolling activeClass="active" to="three-columns" spy={true} smooth={true}>O co chodzi?
             </Scrolling>
             <Scrolling activeClass="active" to="about" spy={true} smooth={true}>O nas</Scrolling>

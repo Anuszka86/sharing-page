@@ -1,0 +1,93 @@
+@use "settings/colors";
+@use "settings/fonts";
+@use "settings/reset";
+
+.homeHeader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.decor {
+width: 15.8rem;
+  align-self: center;
+}
+.entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.entry-header {
+  font-family: fonts.$font-base;
+  font-size: 2.375rem;
+  color: colors.$color-dark;
+}
+
+.entry-buttons {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  gap: 1rem;
+
+
+
+}
+.entry-button {
+  flex:1;
+  padding: 1rem;
+  background: none;
+  text-align: center;
+  font-family: fonts.$font-base;
+  font-weight: lighter;
+  font-size: 2.25rem;
+  color:  colors.$color-dark;
+
+
+
+}
+.heroPic {
+  height: 80vh;
+  width: auto;
+}
+
+.main-nav {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.login-register-navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  a {
+    padding: 0.625rem;
+  color: colors.$color-light;
+    font-family: fonts.$font-base;
+  font-size: 1rem}
+  };
+
+.Home-navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  a {
+    padding: 0.625rem;
+    color: colors.$color-dark;
+    font-family: fonts.$font-base;
+    font-size: 1.125rem}
+  a:hover {
+    border: 1px solid colors.$color-dark;
+  }
+  }
+

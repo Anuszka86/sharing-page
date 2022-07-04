@@ -2,19 +2,19 @@ import React from "react";
 import "./../scss/_homeHeader.scss"
 import HeroPic from "./../assets/Home-Hero-Image.jpg";
 import decoration from "./../assets/Decoration.svg";
-
+import { Link } from "react-router-dom";
 
 function Start(){
 
     return(
         <div className="start" id="start">
-            <img src={HeroPic}/>
+            <img className="heroPic" src={HeroPic}/>
             <div className="entry">
-                <h2>Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h2>
-                <img src={decoration}/>
+                <h2 className="entry-header">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h2>
+                <img src={decoration} className="decor"/>
                 <div className="entry-buttons">
-                <button className=" submitting-button">ODDAJ RZECZY</button>
-                <button className=" submitting-button">ZORGANIZUJ ZBIÓRKĘ</button>
+                    <button className="entry-button submitting-button"><Link to="/logowanie" className="login-register-link">ODDAJ RZECZY</Link></button>
+                    <button className="entry-button submitting-button"><Link to="/logowanie" className="login-register-link">ZORGANIZUJ ZBIÓRKĘ</Link></button>
                 </div>
             </div>
         </div>    )
