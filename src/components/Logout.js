@@ -7,13 +7,16 @@ import MainNav from "./MainNav";
 
 function Logout() {
     return (
-        <div className="login-logout">
+        <div>
             <MainNav/>
-            <h2 className="login-logout-header">Wylogowanie nastąpiło pomyślnie</h2>
-            <img src={decoration}/>
-            <button className="login-logout-button submitting-button"> <Link to="/" className="login-register-link"> Strona główna </Link></button>
-                   </div>
-    )
+            <div className="login-logout">
+                <h2 className="login-logout-header">Wylogowanie nastąpiło pomyślnie</h2>
+                <img src={decoration}/>
+                <button className="login-logout-button submitting-button"><Link to="/"
+                                                                                className="login-register-link"> Strona
+                    główna </Link></button>
+            </div>
+        </div>)
 }
 
 export default Logout;

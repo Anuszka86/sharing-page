@@ -6,8 +6,10 @@ import MainNav from "./MainNav";
 
 function Register() {
     return (
-        <div className="login-logout">
+        <div>
             <MainNav/>
+            <div className="login-logout">
+
             <h2 className="login-logout-header">Złóż konto</h2>
             <img src={decoration}/>
 
@@ -30,7 +32,7 @@ function Register() {
                 <button className="login-logout-button submitting-button">Zarejestruj się</button>
             </div>
         </div>
-    )
+</div>)
 };
 
 

@@ -1,0 +1,54 @@
+@use "settings/colors";
+@use "settings/fonts";
+@use "settings/reset";
+
+.homeSteps {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.steps-bar {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  background: colors.$color-base;
+  gap: 3rem;
+padding: 4.75rem 20vw;
+
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+ /* flex-basis: 100%;*/
+
+  font-family: fonts.$font-base;
+  color: colors.$color-dark;
+}
+.step-icon {
+  width: 83px;
+}
+.step-header {
+  font-size: 1.125rem;
+  text-align: center;
+  text-wrap: normal;
+}
+.step-header::after {
+  content: "";
+  display: block;
+  margin: 1rem auto;
+  width: 70px;
+  height: 1px;
+  background: colors.$color-dark;
+  align-self: center;
+}
+.step-par {
+  font-size: 1rem;
+text-align: center;
+  text-wrap: normal;
+}

@@ -10,7 +10,7 @@ function Start(){
         <div className="start" id="start">
             <img className="heroPic" src={HeroPic}/>
             <div className="entry">
-                <h2 className="entry-header">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h2>
+                <h2 className="home-header">Zacznij pomagać! <br/> Oddaj niechciane rzeczy w zaufane ręce</h2>
                 <img src={decoration} className="decor"/>
                 <div className="entry-buttons">
                     <button className="entry-button submitting-button"><Link to="/logowanie" className="login-register-link">ODDAJ RZECZY</Link></button>

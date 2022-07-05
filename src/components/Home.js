@@ -2,14 +2,15 @@ import React from "react";
 import {Route, Routes} from "react-router-dom";
 import "./../scss/_home.scss"
 import HomeHeader from "./HomeHeader";
+import HomeSteps from "./HomeSteps";
 
 function Home() {
     return (
         <div className="Home">
             <HomeHeader/>
-            {/*<HomeThreeColumns/>
+            {/*<HomeThreeColumns/>*/}
         <HomeSteps/>
-        <HomeAbout/>
+        {/*<HomeAbout/>
         <HomeOrganizations/>
         <HomeContact/>
         <HomeFooter/>*/}

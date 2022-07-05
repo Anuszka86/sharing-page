@@ -1,0 +1,8 @@
+@use "settings/colors";
+@use "settings/fonts";
+@use "settings/reset";
+.home-header {
+  font-family: fonts.$font-base;
+  font-size: 2.375rem;
+  color: colors.$color-dark;
+}
