@@ -15,7 +15,7 @@ return (
             <Link to="/">Start</Link>
             <Scrolling activeClass="active" to="homeSteps" spy={true} smooth={true}>O co chodzi?
             </Scrolling>
-            <Scrolling activeClass="active" to="about" spy={true} smooth={true}>O nas</Scrolling>
+            <Scrolling activeClass="active" to="homeAbout" spy={true} smooth={true}>O nas</Scrolling>
             <Scrolling activeClass="active" to="about" spy={true} smooth={true}>Fundacja i organizacje</Scrolling>
             <Scrolling activeClass="active" to="about" spy={true} smooth={true}>Kontakt</Scrolling>
         </nav>

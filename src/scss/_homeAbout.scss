@@ -1,0 +1,31 @@
+@use "settings/colors";
+@use "settings/fonts";
+@use "settings/reset";
+
+.homeAbout {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background: colors.$color-base;
+  margin-top: 2rem;
+  }
+
+.about-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 20rem;
+}
+
+.about-par {
+  font-size: 1.875rem;
+  font-family: fonts.$font-base;
+  text-align: center;
+  line-height: 3rem;
+}
+.signature {
+  align-self: flex-end;
+}

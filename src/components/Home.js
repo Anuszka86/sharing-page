@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import "./../scss/_home.scss"
 import HomeHeader from "./HomeHeader";
 import HomeSteps from "./HomeSteps";
+import HomeAbout from "./HomeAbout";
 
 function Home() {
     return (
@@ -10,8 +11,8 @@ function Home() {
             <HomeHeader/>
             {/*<HomeThreeColumns/>*/}
         <HomeSteps/>
-        {/*<HomeAbout/>
-        <HomeOrganizations/>
+        <HomeAbout/>
+        {/*<HomeOrganizations/>
         <HomeContact/>
         <HomeFooter/>*/}
         </div>
