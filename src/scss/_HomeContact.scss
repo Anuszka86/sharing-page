@@ -1,0 +1,14 @@
+@use "settings/colors";
+@use "settings/fonts";
+@use "settings/reset";
+
+.homeContact {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../assets/Background-Contact-Form.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 80vh;
+  margin-top: 2rem;
+}

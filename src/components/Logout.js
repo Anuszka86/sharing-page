@@ -6,6 +6,8 @@ import MainNav from "./MainNav";
 
 
 function Logout() {
+
+
     return (
         <div>
             <MainNav/>

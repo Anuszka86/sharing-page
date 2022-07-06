@@ -4,6 +4,7 @@ import "./../scss/_home.scss"
 import HomeHeader from "./HomeHeader";
 import HomeSteps from "./HomeSteps";
 import HomeAbout from "./HomeAbout";
+import HomeContact from "./HomeContact";
 
 function Home() {
     return (
@@ -12,9 +13,9 @@ function Home() {
             {/*<HomeThreeColumns/>*/}
         <HomeSteps/>
         <HomeAbout/>
-        {/*<HomeOrganizations/>
+        {/*<HomeOrganizations/>*/}
         <HomeContact/>
-        <HomeFooter/>*/}
+        {/*<HomeFooter/>*/}
         </div>
     )
 };
