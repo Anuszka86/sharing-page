@@ -21,10 +21,7 @@ function ContactForm() {
             err.message = "musi być dłuższa niż 120 znaków"
         }
         if (Object.values(err).length) {
-            setErrors(prevValues => ({
-                ...prevValues,
-                err,
-            }));
+            setErrors(err);
             return false;
         }
 
