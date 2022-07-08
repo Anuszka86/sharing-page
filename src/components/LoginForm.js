@@ -9,7 +9,7 @@ import {auth} from "../firebaseConfig";
 const LoginForm = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
+    const [errors, setErrors] = useState({})
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -24,17 +24,46 @@ const LoginForm = () => {
             console.log(error.message);
         }
     };
+    const validate = () => {
+        const err = {}
+
+        if (!email?.includes("@")) {
+            err.email = "Niepoprawny email"
+        }
+        if (password?.length < 6) {
+            err.password = "musi być dłuższa niż 6 znaków"
+        }
+
+
+        if (Object.values(err).length) {
+            setErrors(err);
+            return false;
+        }
+
+        return true;
+
+    }
+    const handleChangeEmail = (e) =>{
+        setEmail(e.target.value);
+        validate();
+    }
+
+    const handleChangePass = (e) =>{
+        setPassword(e.target.value);
+        validate();
+    }
+
 
      return (
         <>
             <form className="login-logout-form">
                 <label>
                     Email
-                    <input type="text" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
+                    <input type="text" name="email" value={email} onChange={handleChangeEmail}/>
                 </label>
                 <label>
                     Hasło
-                    <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)}/>
+                    <input type="password" name="password" value={handleChangePass()}/>
                 </label>
 
             </form>
