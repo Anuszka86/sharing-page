@@ -1,6 +1,4 @@
 import React, {useState} from "react";
-import "./../scss/_homeAbout.scss";
-
 
 function ContactForm() {
     const [email, setEmail] = useState("");
